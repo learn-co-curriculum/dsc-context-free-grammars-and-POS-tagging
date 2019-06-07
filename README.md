@@ -3,7 +3,7 @@
 
 ## Introduction
 
-n this lesson, we'll explore the concept of Context-Free Grammars, and the role they play in linguistics and NLP, particularly in relation to Part-Of-Speech tagging.
+In this lesson, we'll explore the concept of Context-Free Grammars, and the role they play in linguistics and NLP, particularly in relation to Part-Of-Speech tagging.
 
 ## Objectives
 
@@ -20,7 +20,7 @@ Consider the following sentence:
 
 > "Colorless green ideas sleep furiously."
 
-This is a sentence dreamed up the by famous linguist [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky). This sentence, while correct at the **_grammatical_** or **_syntactic_** level, is just a bunch of nonsense when we consider it at the **_semantic_** level. The sentence follows all the proper rules for a sentence in English, although in reality, it's complete nonsense. This was one of Chomsky's big ideas--that speech contains an underlying "deep structure" that we recognize, regardless of the actual content of the the sentence. We don't actually need any context about what the sentence is actually about to determine if the grammar is correct--hence the name, **_Context-Free Grammar_**, which we'll refer to as 'CFG' for short, for the remainder of this lesson. 
+This is a sentence dreamed up by the famous linguist [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky). This sentence, while correct at the **_grammatical_** or **_syntactic_** level, is just a bunch of nonsense when we consider it at the **_semantic_** level. The sentence follows all the proper rules for a sentence in English, although in reality, it's complete nonsense. This was one of Chomsky's big ideas--that speech contains an underlying "deep structure" that we recognize, regardless of the actual content of the sentence. We don't actually need any context about what the sentence is actually about to determine if the grammar is correct--hence the name, **_Context-Free Grammar_**, which we'll refer to as 'CFG' for short, for the remainder of this lesson. 
 
 In order to understand CFGs, we first need to back up and gain a little background knowledge about linguistics. According to linguistics, there are 6 different levels of language:
 
@@ -28,13 +28,13 @@ In order to understand CFGs, we first need to back up and gain a little backgrou
 
 When talking about CFGs, we're focusing on the **_syntactic level_**. This level worries only about the structure of the sentence, not the informational content. 
 
-So why do CFGs matter to us? For starters, they are an important part of computer science as a whole, as any code we write gets fed through a parser to determine what we want the computer to actually do. For NLP specifically, they are important because they describe a way that we can write a grammar to interpret sentences at the syntactic level. This is an approach that can be used when we want to generate **_Part-Of-Speech (POS) Tags_**. Consider the word the "run". This word can be interpreted as either a noun or a verb. As a noun, we may be talking about the concept of going for a jog, or a run scored in a baseball game. As a verb, we may be talking about the action of running. On it's own, we don't know this. Part of the way we know which meaning to interpret for the word is our understanding of where the word fits into the sentence, and the part of speech it occupies in that sentence--we implicitly recognize that the sentence "I run in the mornings" uses run as a verb, while the sentence "The yankees scored a run" uses it as a verb, based on it's placement in the sentence. 
+So why do CFGs matter to us? For starters, they are an important part of computer science as a whole, as any code we write gets fed through a parser to determine what we want the computer to actually do. For NLP specifically, they are important because they describe a way that we can write a grammar to interpret sentences at the syntactic level. This is an approach that can be used when we want to generate **_Part-Of-Speech (POS) Tags_**. Consider the word the "run". This word can be interpreted as either a noun or a verb. As a noun, we may be talking about the concept of going for a jog, or a run scored in a baseball game. As a verb, we may be talking about the action of running. On its own, we don't know this. Part of the way we know which meaning to interpret for the word is our understanding of where the word fits into the sentence, and the part of speech it occupies in that sentence--we implicitly recognize that the sentence "I run in the mornings" uses run as a verb, while the sentence "The yankees scored a run" uses it as a verb, based on it's placement in the sentence. 
 
 This brings us to the concept of **_Parse Trees_**. 
 
 ## Parse Trees and Sentence Structure
 
-In English, sentences consist of a **_Noun Phrase_** followed by a **_Verb Phrase_**, which may optionally be followed by a **_Prepositional Phrase_**. This seems simple, but it gets more tricky when we realize that there is a recursive structure to these phrases. A Noun phrase may consist of multiple smaller noun phrases, and in some cases, even a verb phrase. Similarly, a verb phrase can consist of multiple smaller verb phrases and noun phrases, which can themslves be made up of smaller noun phrases and verb phrases. 
+In English, sentences consist of a **_Noun Phrase_** followed by a **_Verb Phrase_**, which may optionally be followed by a **_Prepositional Phrase_**. This seems simple, but it gets more tricky when we realize that there is a recursive structure to these phrases. A Noun phrase may consist of multiple smaller noun phrases, and in some cases, even a verb phrase. Similarly, a verb phrase can consist of multiple smaller verb phrases and noun phrases, which can themselves be made up of smaller noun phrases and verb phrases. 
 
 This leads levels of **_ambiguity_** that can be troublesome for computers. NLTK's documentation explains this by examining the classic Groucho Marx joke:
 
@@ -102,5 +102,5 @@ In the next lab, we'll gain some practice writing some toy CFGs for a few target
 
 ## Summary
 
-In this lesson, we dove into lingustics to understand the concept of a **_Context-Free Grammar_**, and explored how they can be used to create Parse Trees for sentences.
+In this lesson, we dove into linguistics to understand the concept of a **_Context-Free Grammar_**, and explored how they can be used to create Parse Trees for sentences.
 
