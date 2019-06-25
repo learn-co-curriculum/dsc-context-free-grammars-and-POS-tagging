@@ -24,7 +24,7 @@ This is a sentence dreamed up by the famous linguist [Noam Chomsky](https://en.w
 
 In order to understand CFGs, we first need to back up and gain a little background knowledge about linguistics. According to linguistics, there are 6 different levels of language:
 
-<img src='LevelsOfLanguage-Graph.gif'>
+<img src='images/LevelsOfLanguage-Graph.gif'>
 
 When talking about CFGs, we're focusing on the **_syntactic level_**. This level worries only about the structure of the sentence, not the informational content. 
 
@@ -44,7 +44,7 @@ There are two different ways that we can interpret the first sentence. The commo
 
 The difference between the two interpretations can be most easily understood by comparing the **_Parse Tree_** for each. Take a look at this diagram from the [NLTK Book's chapter on analyzing sentence structure](https://www.nltk.org/book/ch08.html):
 
-<img src='parse_tree.png'>
+<img src='images/parse_tree.png'>
 
 Let's break these diagrams down piece by piece. The first, most natural interpretation of the phrase "I shot an elephant in my pajamas" breaks down the sentence as such:
 
@@ -71,7 +71,7 @@ This brings us to part of speech tagging. One way that we can help a computer un
 
 Let's take a look at the example CFG from the NLTK link provided above:
 
-<img src='cfg.png'>
+<img src='images/cfg.png'>
 
 Let's break down this CFG, and see if we can understand it a bit better. 
 
