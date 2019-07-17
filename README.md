@@ -24,7 +24,7 @@ This is a sentence dreamed up by the famous linguist [Noam Chomsky](https://en.w
 
 In order to understand CFGs, we first need to back up and gain a little background knowledge about linguistics. According to linguistics, there are 6 different levels of language:
 
-<img src='images/LevelsOfLanguage-Graph.gif'>
+<img src='images/new_LevelsOfLanguage-Graph.png'>
 
 When talking about CFGs, we're focusing on the **_syntactic level_**. This level worries only about the structure of the sentence, not the informational content. 
 
@@ -104,3 +104,8 @@ In the next lab, we'll gain some practice writing some toy CFGs for a few target
 
 In this lesson, we dove into linguistics to understand the concept of a **_Context-Free Grammar_**, and explored how they can be used to create Parse Trees for sentences.
 
+
+
+```python
+
+```
