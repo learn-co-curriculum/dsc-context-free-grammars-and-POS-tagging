@@ -22,13 +22,13 @@ Consider the following sentence:
 
 This is a sentence dreamed up by the famous linguist [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky). This sentence, while correct at the **_grammatical_** or **_syntactic_** level, is just a bunch of nonsense when we consider it at the **_semantic_** level. The sentence follows all the proper rules for a sentence in English, although in reality, it's complete nonsense. This was one of Chomsky's big ideas--that speech contains an underlying "deep structure" that we recognize, regardless of the actual content of the sentence. We don't actually need any context about what the sentence is actually about to determine if the grammar is correct--hence the name, **_Context-Free Grammar_**, which we'll refer to as 'CFG' for short, for the remainder of this lesson. 
 
-In order to understand CFGs, we first need to back up and gain a little background knowledge about linguistics. According to linguistics, there are 6 different levels of language:
+In order to understand CFGs, we first need to back up and gain a little background knowledge about linguistics. According to linguistics, there are 5 different levels of language:
 
 <img src='images/new_LevelsOfLanguage-Graph.png'>
 
 When talking about CFGs, we're focusing on the **_syntactic level_**. This level worries only about the structure of the sentence, not the informational content. 
 
-So why do CFGs matter to us? For starters, they are an important part of computer science as a whole, as any code we write gets fed through a parser to determine what we want the computer to actually do. For NLP specifically, they are important because they describe a way that we can write a grammar to interpret sentences at the syntactic level. This is an approach that can be used when we want to generate **_Part-Of-Speech (POS) Tags_**. Consider the word the "run". This word can be interpreted as either a noun or a verb. As a noun, we may be talking about the concept of going for a jog, or a run scored in a baseball game. As a verb, we may be talking about the action of running. On its own, we don't know this. Part of the way we know which meaning to interpret for the word is our understanding of where the word fits into the sentence, and the part of speech it occupies in that sentence--we implicitly recognize that the sentence "I run in the mornings" uses run as a verb, while the sentence "The yankees scored a run" uses it as a verb, based on it's placement in the sentence. 
+So why do CFGs matter to us? For starters, they are an important part of computer science as a whole, as any code we write gets fed through a parser to determine what we want the computer to actually do. For NLP specifically, they are important because they describe a way that we can write a grammar to interpret sentences at the syntactic level. This is an approach that can be used when we want to generate **_Part-Of-Speech (POS) Tags_**. Consider the word the "run". This word can be interpreted as either a noun or a verb. As a noun, we may be talking about the concept of going for a jog, or a run scored in a baseball game. As a verb, we may be talking about the action of running. On its own, we don't know this. Part of the way we know which meaning to interpret for the word is our understanding of where the word fits into the sentence, and the part of speech it occupies in that sentence--we implicitly recognize that the sentence "I run in the mornings" uses run as a verb, while the sentence "The Yankees scored a run" uses it as a noun, all based on it's placement in the sentence. 
 
 This brings us to the concept of **_Parse Trees_**. 
 
@@ -104,8 +104,3 @@ In the next lab, we'll gain some practice writing some toy CFGs for a few target
 
 In this lesson, we dove into linguistics to understand the concept of a **_Context-Free Grammar_**, and explored how they can be used to create Parse Trees for sentences.
 
-
-
-```python
-
-```
